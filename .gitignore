@@ -1,0 +1,24 @@
+﻿# Unreal Engine – generierte Dateien
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Test/
+
+# Visual Studio
+.vs/
+*.sln
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+*.opensdf
+*.sdf
+
+# Lokale Git-Sicherung
+.git_backup/
+.github/
+
+# Betriebssystemdateien
+Thumbs.db
+.DS_Store
