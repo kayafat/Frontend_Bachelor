@@ -150,7 +150,10 @@ Die Datei `Bachelor.sln` in Visual Studio 2022 öffnen.
 
 <img width="503" height="233" alt="rON7dovhKO" src="https://github.com/user-attachments/assets/c3134266-5c71-4234-a912-773ee0ee63b2" />
 
-**Der erste Build kann mehrere Minuten dauern.**
+&nbsp;
+
+>[!NOTE]
+>Der erste Build kann mehrere Minuten dauern.
 - Nach einem erfolgreichen Build sollte die Ausgabe ungefähr mit folgender Meldung enden: `Build succeeded`
 
 >[!NOTE]
@@ -163,9 +166,10 @@ Dieser Vorgang kann mehrere Minuten dauern.
 
 <img width="720" height="370" alt="UnrealEditor_95PoLi9k1W" src="https://github.com/user-attachments/assets/3d18b711-12de-4f92-80ea-12aed6e1a021" />
 
-**Im Unreal Editor anschließend kontrollieren:** `Bearbeiten → Plugins`
+- **Im Unreal Editor anschließend kontrollieren:** `Bearbeiten → Plugins`
 
-<img width="1668" height="513" alt="UnrealEditor_wYBZ3ZmimX" src="https://github.com/user-attachments/assets/c12e34e9-7abe-4380-aee6-ee6383943fec" />
+<img width="1654" height="526" alt="UnrealEditor_D9CjQfGB0R" src="https://github.com/user-attachments/assets/b7eb1a36-df28-4bfe-b8bd-5fb199fe4e6b" />
+
 
 > [!NOTE]
 > Falls Unreal Engine eine Aktivierung oder einen Neustart verlangt, den Editor anschließend neu starten.
