@@ -96,6 +96,13 @@ Auf der offiziellen [NVIDIA-Developer-Seite](https://developer.nvidia.com/ace-fo
 | :---: | :---: |
 | <img width="510" height="326" alt="chrome_zpyINMAoBL" src="https://github.com/user-attachments/assets/a7f1150e-51ba-4a57-bbbd-73cec50bba7c" /> | <img width="499" height="261" alt="chrome_qHRTyE1xVI" src="https://github.com/user-attachments/assets/0a9c8ded-a8ff-467a-9be8-ee83079c2cd5" /> |
 
+**Die Daten die aus der .zip gebraucht werden sind folgende:**
+| NV_ACE_Reference-UE5.6-v2.5.0rc3 | ACE_3.0_A2F_Models |
+| :---: | :---: |
+| <img width="317" height="161" alt="WinRAR_U7DYWHwGqQ" src="https://github.com/user-attachments/assets/ea361123-8168-459a-860b-85966e7c258b" /> | <img width="260" height="159" alt="WinRAR_AVUOH3MV05" src="https://github.com/user-attachments/assets/6542f594-4065-4072-9cbc-7c9407c212b2" /> |
+
+
+
 Nach dem Entpacken werden insbesondere diese Pluginordner benötigt:
 - NV_ACE_Reference
 - NvAudio2FaceClaire
