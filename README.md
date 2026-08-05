@@ -9,7 +9,7 @@ Das Projekt wurde mit **Unreal Engine 5.6** umgesetzt. Für die
 Audio2Face-basierte Gesichtsanimation werden das **NVIDIA ACE Unreal Plugin**
 sowie das lokale Modell-Plugin **NvAudio2FaceClaire** benötigt.
 
-Das Frontend kann separat geöffnet und kompiliert werden. Für die vollständige Dialogfunktion werden zusätzlich das [Backend](https://github.com/kayafat/Bachelor_Backend.git), der Piper-Server, die Datenbankumgebung und die Ollama-Verbindung zum DACHS-Cluster benötigt.
+Das Frontend kann separat geöffnet und kompiliert werden. Für die vollständige Dialogfunktion werden zusätzlich das [Backend](https://github.com/kayafat/Backend_Bachelor.git), der Piper-Server, die Datenbankumgebung und die Ollama-Verbindung zum DACHS-Cluster benötigt.
 
 # Schritt 1: Installation des Frontends
 
@@ -184,7 +184,7 @@ Nach dem Öffnen des Projekts:
 5. Die im Projekt vorgesehene Interaktion auslösen.
 
 >[!Important]
->Für die vollständige Dialogfunktion müssen parallel das [Backend](https://github.com/kayafat/Bachelor_Backend.git), Piper und das Sprachmodell verfügbar sein.
+>Für die vollständige Dialogfunktion müssen parallel das [Backend](https://github.com/kayafat/Backend_Bachelor.git), Piper und das Sprachmodell verfügbar sein.
 
 ## Problembehandlung im Frontend
 
