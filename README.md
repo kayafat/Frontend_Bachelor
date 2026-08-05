@@ -54,11 +54,11 @@ cd Bachelorarbeit
 **Anschließend das Frontend-Repository im Terminal klonen:**
 ```
 git lfs install
-git clone https://github.com/kayafat/Bachelor_Frontend.git
+git clone https://github.com/kayafat/Frontend_Bachelor.git
 ```
 **Nach dem Abschluss des Downloads folgende Befehle ausführen:**
 ```
-cd Bachelor_Frontend
+cd Frontend_Bachelor
 git lfs pull
 ```
 
@@ -119,7 +119,7 @@ Bei einer Standardinstallation ergibt sich beispielsweise:
 > [!NOTE]
 > Existiert der Ordner `Marketplace` noch nicht, kann er manuell angelegt werden.
 > Die Plugins dürfen nicht gleichzeitig im Engine-Ordner und im
-> projektbezogenen Ordner `Bachelor_Frontend\Plugins` installiert sein.
+> projektbezogenen Ordner `Frontend_Bachelor\Plugins` installiert sein.
 
 ## 5. Visual-Studio-Projektdateien erzeugen
 
@@ -191,7 +191,7 @@ Nach dem Öffnen des Projekts:
 ### `Not in a Git repository`
 - Der Befehl wurde außerhalb des Repository-Ordners ausgeführt.
 ```bat
-...\Bachelorarbeit\Bachelor_Frontend
+...\Bachelorarbeit\Frontend_Bachelor
 git lfs pull
 ```
 ### Unreal-Assets sind ungewöhnlich klein oder können nicht geöffnet werden
