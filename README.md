@@ -268,6 +268,12 @@ x64
 
 ---
 
+### CUDA Fehler?
+
+Wenn Fehler bezüglich CUDA auftreten sollten: [NVIDIA GPU Computing Toolkit](https://developer.nvidia.com/cuda-toolkit-archive) Version `CUDA v12.8.1` zusätzlich installieren.
+
+---
+
 ### Das geöffnete Projekt zeigt nur eine schwarze Welt. Die Hauptmap wurde nicht geladen?
 
 - Wählen Sie die **map_1** aus, um die virtuelle Lernumgebung und den MetaHuman zu sehen.
@@ -281,6 +287,8 @@ x64
 - Sie können das Viewport im folgenden anpassen:
 
 <img width="870" height="641" alt="oqmys4SSyF" src="https://github.com/user-attachments/assets/b6b3b709-2d18-47fd-96ed-96596bedff6f" />
+
+---
 
 >### Autor
 >- **Fatih Kaya**
