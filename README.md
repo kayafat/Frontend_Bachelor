@@ -11,7 +11,7 @@ sowie das lokale Modell-Plugin **NvAudio2FaceClaire** benötigt.
 
 Das Frontend kann separat geöffnet und kompiliert werden. Für die vollständige Dialogfunktion werden zusätzlich das [Backend](https://github.com/kayafat/Backend_Bachelor.git), der Piper-Server, die Datenbankumgebung und die Ollama-Verbindung zum DACHS-Cluster benötigt.
 
-# Schritt 1: Installation des Frontends
+# Installation des Frontends
 
 ## Voraussetzungen für das Frontend
 
@@ -43,6 +43,8 @@ Das Projekt wurde auf folgender Hardware entwickelt und getestet:
 >[!NOTE]
 >Diese Angaben stellen die verwendete Entwicklungsumgebung dar und sind nicht als verbindliche Mindestanforderungen zu verstehen.
 
+---
+
 ## 1. Arbeitsordner anlegen und Frontend herunterladen
 
 Öffnen Sie ein Terminal und erstellen Sie mit folgenden Befehlen einen Ordner, oder im Explorer auf dem gewünschten Laufwerk.
@@ -61,6 +63,7 @@ git clone https://github.com/kayafat/Frontend_Bachelor.git
 cd Frontend_Bachelor
 git lfs pull
 ```
+---
 
 ## 2. Unreal Engine 5.6 installieren
 
@@ -73,9 +76,9 @@ Unreal Engine 5.6 wird über den Epic Games Launcher installiert:
 
 <img width="607" height="343" alt="EpicGamesLauncher_lxA0dZvbsw" src="https://github.com/user-attachments/assets/b15b47f6-4142-47b7-a21e-33c656027804" />
 
-
-
 Ein typischer Installationspfad lautet: `C:\Program Files\Epic Games\UE_5.6`. Je nach gewähltem Speicherort kann der Pfad abweichen.
+
+---
 
 ## 3. Visual Studio 2022 einrichten
 
@@ -85,7 +88,12 @@ Im Visual Studio Installer die Workload `Spieleentwicklung mit C++` aktivieren. 
 - Visual Studio Tools for Unreal Engine
 - die von Unreal benötigten .NET-Komponenten
 
-Nach der Installation Visual Studio und den Epic Games Launcher gegebenenfalls neu starten.
+<img width="1280" height="974" alt="VirtualBoxVM_gikyPy1xke" src="https://github.com/user-attachments/assets/ac6e9e70-c328-4b0b-af1a-ec07b9679bf5" />
+
+>[!Note]
+>Nach der Installation Visual Studio und den Epic Games Launcher gegebenenfalls neu starten.
+
+---
 
 ## 4. NVIDIA ACE und die Audio2Face Modelle installieren
 
@@ -96,12 +104,11 @@ Auf der offiziellen [NVIDIA-Developer-Seite](https://developer.nvidia.com/ace-fo
 | :---: | :---: |
 | <img width="510" height="326" alt="chrome_zpyINMAoBL" src="https://github.com/user-attachments/assets/a7f1150e-51ba-4a57-bbbd-73cec50bba7c" /> | <img width="499" height="261" alt="chrome_qHRTyE1xVI" src="https://github.com/user-attachments/assets/0a9c8ded-a8ff-467a-9be8-ee83079c2cd5" /> |
 
-**Die Daten die aus der .zip gebraucht werden sind folgende:**
+- **Die Daten die aus der .zip gebraucht werden sind folgende:**
+
 | NV_ACE_Reference-UE5.6-v2.5.0rc3 | ACE_3.0_A2F_Models |
 | :---: | :---: |
 | <img width="317" height="161" alt="WinRAR_U7DYWHwGqQ" src="https://github.com/user-attachments/assets/ea361123-8168-459a-860b-85966e7c258b" /> | <img width="260" height="159" alt="WinRAR_AVUOH3MV05" src="https://github.com/user-attachments/assets/6542f594-4065-4072-9cbc-7c9407c212b2" /> |
-
-
 
 Nach dem Entpacken werden insbesondere diese Pluginordner benötigt:
 - NV_ACE_Reference
@@ -121,13 +128,15 @@ Bei einer Standardinstallation ergibt sich beispielsweise:
 > Die Plugins dürfen nicht gleichzeitig im Engine-Ordner und im
 > projektbezogenen Ordner `Frontend_Bachelor\Plugins` installiert sein.
 
+---
+
 ## 5. Visual-Studio-Projektdateien erzeugen
 
 Nach der Installation der Plugins:
 - Rechtsklick auf `Bachelor.uproject`
 - **Generate Visual Studio project files** auswählen
 
-<img width="538" height="284" alt="qKIyjH9ngT" src="https://github.com/user-attachments/assets/f39bf99c-ac56-4e20-a78a-7db9ccab5ee9" />
+<img width="537" height="265" alt="generatingProjectfiles2" src="https://github.com/user-attachments/assets/30c8d091-33c4-4cac-b8d4-e45f7ccbaa2e" />
 
 - Warten, bis die Projektdateien erfolgreich erzeugt wurden
 
@@ -135,14 +144,22 @@ Nach der Installation der Plugins:
 
 - Danach sollte im Projektordner unter anderem `Bachelor.sln` vorhanden sein.
 
-<img width="426" height="312" alt="explorer_ToyzSmjPLw" src="https://github.com/user-attachments/assets/31762670-ae3a-4761-b9eb-1641aaeefa60" />
+<img width="608" height="106" alt="sln1" src="https://github.com/user-attachments/assets/36a596cb-6afb-4ec8-9d46-7adf26ca799e" />
 
 - Die Ordner `Binaries`, `Intermediate`, `Saved` und `.vs` werden lokal erzeugt und befinden sich deshalb nicht im GitHub-Repository.
+
+---
 
 ## 6. Frontend kompilieren
 
 Die Datei `Bachelor.sln` in Visual Studio 2022 öffnen.
-- **Oben in Visual Studio folgende Konfiguration auswählen:**
+
+>[!Important]
+> Falls dies die erste Einrichtung ist, installieren Sie die **Desktop-Entwicklung mit C++** und die **.NET-Komponenten**:
+
+<img width="1128" height="711" alt="VirtualBoxVM_XA9i8tzpeR" src="https://github.com/user-attachments/assets/6a9315d4-cb45-4b97-8e2f-655c2e09c939" />
+
+- Danach **Oben in Visual Studio folgende Konfiguration auswählen:**
 
 <img width="274" height="154" alt="devenv_OgC2ChYAQl" src="https://github.com/user-attachments/assets/ff735b77-0952-463f-9b8a-21d48d1ee360" />
 
@@ -157,10 +174,15 @@ Die Datei `Bachelor.sln` in Visual Studio 2022 öffnen.
 >[!Important]
 >Warnungen aus externen Engine- oder Plugin-Modulen sind nicht automatisch Fehler. Entscheidend ist, ob das Projekt `Bachelor` erfolgreich erstellt wurde.
 
+---
+
 ## 7. Unreal-Engine-Projekt öffnen
 
-Nach dem erfolgreichen Build `Bachelor.uproject` öffnen. Beim ersten Start können Shader und MetaHuman-Assets neu kompiliert werden.
-Dieser Vorgang kann mehrere Minuten dauern.
+Nach dem erfolgreichen Build `Bachelor.uproject` öffnen. 
+
+<img width="621" height="109" alt="uproject1" src="https://github.com/user-attachments/assets/e2cc5c1c-632a-4724-915b-c791a2a9eec2" />
+
+- Beim ersten Start können Shader und MetaHuman-Assets neu kompiliert werden. Dieser Vorgang kann mehrere Minuten dauern.
 
 <img width="720" height="370" alt="UnrealEditor_95PoLi9k1W" src="https://github.com/user-attachments/assets/3d18b711-12de-4f92-80ea-12aed6e1a021" />
 
@@ -170,6 +192,8 @@ Dieser Vorgang kann mehrere Minuten dauern.
 
 > [!NOTE]
 > Falls Unreal Engine eine Aktivierung oder einen Neustart verlangt, den Editor anschließend neu starten.
+
+---
 
 ## 8. Projekt starten
 
@@ -186,7 +210,9 @@ Nach dem Öffnen des Projekts:
 >[!Important]
 >Für die vollständige Dialogfunktion müssen parallel das [Backend](https://github.com/kayafat/Backend_Bachelor.git), Piper und das Sprachmodell verfügbar sein.
 
-## Problembehandlung im Frontend
+---
+
+# Problembehandlung im Frontend
 
 ### `Not in a Git repository`
 - Der Befehl wurde außerhalb des Repository-Ordners ausgeführt.
@@ -224,6 +250,24 @@ Development Editor
 x64
 ```
 
-### Autor
-- **Fatih Kaya**
-- Bachelorarbeit, Hochschule Esslingen
+### Build in `Bachelor.sln` kann nicht erstellt werden → *Result: Failed (OtherCompilationError)*
+
+<img width="2129" height="610" alt="mspaint_H8I3dnrCUy" src="https://github.com/user-attachments/assets/565987a3-3e70-4272-8530-7da515f3dc60" />
+
+- Stellen Sie sicher dass **NV_ACE_Reference** und die Audio2Face-Modelle sich im Marketplace Ordner befinden. **Überprüfen Sie erneut den Schritt 4.**
+
+### Das geöffnete Projekt zeigt nur eine schwarze Welt. Die Hauptmap wurde nicht geladen?
+
+- Wählen Sie die **map_1** aus, um die virtuelle Lernumgebung und den MetaHuman zu sehen.
+
+<img width="706" height="573" alt="UnrealEditor_d8yKv9mDrg" src="https://github.com/user-attachments/assets/40c25cc4-ebaa-452e-8df7-0a059fcb3dbb" />
+
+### Die Ausführung des Projekts überlastet meinen Computer
+
+- Sie können das Viewport im folgenden anpassen:
+
+<img width="870" height="641" alt="oqmys4SSyF" src="https://github.com/user-attachments/assets/b6b3b709-2d18-47fd-96ed-96596bedff6f" />
+
+>### Autor
+>- **Fatih Kaya**
+>- Bachelorarbeit, Hochschule Esslingen
