@@ -278,7 +278,7 @@ Wenn Fehler bezüglich CUDA auftreten sollten: [NVIDIA GPU Computing Toolkit](ht
 
 - Wählen Sie die **map_1** aus, um die virtuelle Lernumgebung und den MetaHuman zu sehen.
 
-<img width="706" height="573" alt="UnrealEditor_d8yKv9mDrg" src="https://github.com/user-attachments/assets/40c25cc4-ebaa-452e-8df7-0a059fcb3dbb" />
+<img width="1598" height="683" alt="UnrealEditor_fC1hkc6Fwb" src="https://github.com/user-attachments/assets/54fc14ac-bf4a-44eb-b688-82c603762854" />
 
 ---
 
