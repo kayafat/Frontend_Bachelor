@@ -220,12 +220,18 @@ Nach dem Öffnen des Projekts:
 ...\Bachelorarbeit\Frontend_Bachelor
 git lfs pull
 ```
+
+---
+
+
 ### Unreal-Assets sind ungewöhnlich klein oder können nicht geöffnet werden
 - Git LFS wurde nicht vollständig ausgeführt:
 ```bat
 git lfs install
 git lfs pull
 ```
+
+---
 
 ### Benötigtes Plugin fehlt
 - Prüfen, ob folgende Dateien vorhanden sind:
@@ -236,12 +242,14 @@ git lfs pull
 <UE_5.6>\Engine\Plugins\Marketplace\NvAudio2FaceMark\NvAudio2FaceMark.uplugin
 ```
 
+---
+
 ### `Bachelor.sln` fehlt
 - Visual-Studio-Projektdateien erneut erzeugen:
-```text
-Rechtsklick auf Bachelor.uproject
-→ Generate Visual Studio project files
-```
+- Rechtsklick auf `Bachelor.uproject` → Generate Visual Studio project files
+
+
+---
 
 ### Unreal meldet fehlende oder veraltete Module
 - `Bachelor.sln` öffnen und das Projekt mit folgender Konfiguration neu bauen:
@@ -250,17 +258,23 @@ Development Editor
 x64
 ```
 
+---
+
 ### Build in `Bachelor.sln` kann nicht erstellt werden → *Result: Failed (OtherCompilationError)*
 
 <img width="2129" height="610" alt="mspaint_H8I3dnrCUy" src="https://github.com/user-attachments/assets/565987a3-3e70-4272-8530-7da515f3dc60" />
 
 - Stellen Sie sicher dass **NV_ACE_Reference** und die Audio2Face-Modelle sich im Marketplace Ordner befinden. **Überprüfen Sie erneut den Schritt 4.**
 
+---
+
 ### Das geöffnete Projekt zeigt nur eine schwarze Welt. Die Hauptmap wurde nicht geladen?
 
 - Wählen Sie die **map_1** aus, um die virtuelle Lernumgebung und den MetaHuman zu sehen.
 
 <img width="706" height="573" alt="UnrealEditor_d8yKv9mDrg" src="https://github.com/user-attachments/assets/40c25cc4-ebaa-452e-8df7-0a059fcb3dbb" />
+
+---
 
 ### Die Ausführung des Projekts überlastet meinen Computer
 
