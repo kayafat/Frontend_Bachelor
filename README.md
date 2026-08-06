@@ -212,6 +212,34 @@ Nach dem Öffnen des Projekts:
 
 ---
 
+# Extras
+
+## Manuelle Gestensteuerung per Tastendruck
+
+Die Gesten des **MetaHuman-Dozenten** können zusätzlich manuell über die
+Tastatur ausgelöst werden. Hierzu ist im `BP_PlayerController` jeder
+verfügbaren Animation eine Taste zugeordnet.
+
+- Ein Ausschnitt der entsprechenden Blueprint-Umsetzung ist nachfolgend
+dargestellt:
+
+<img width="665" height="493" alt="UnrealEditor_VHV8HyNKh9" src="https://github.com/user-attachments/assets/fe47d49a-2fb0-49e8-bab4-39ad2061f620" />
+
+### Die folgenden Tasten lösen die jeweils zugeordnete Animation aus::
+
+| Taste | Animation | Taste | Animation |
+|---|---|---|---|
+| Num 0 | thoughtful_head_nod | Num 7 | acknowledging_pose |
+| Num 1 | thinking_pose | Num 8 | talk_pose2 |
+| Num 2 | head_nod_yes | Num 9 | talk_pose3 |
+| Num 3 | head_shake_no | Num ÷ | arm_gesture |
+| Num 4 | pointing_pose | Num × | pointing_forward |
+| Num 5 | talk_pose | Einfg | hello_pose |
+| Num 6 | surprised_pose | Entf | bye_pose |
+
+---
+
+
 # Problembehandlung im Frontend
 
 ### `Not in a Git repository`
