@@ -11,6 +11,8 @@ sowie das lokale Modell-Plugin **NvAudio2FaceClaire** benötigt.
 
 Das Frontend kann separat geöffnet und kompiliert werden. Für die vollständige Dialogfunktion werden zusätzlich das [Backend](https://github.com/kayafat/Backend_Bachelor.git), der Piper-Server, die Datenbankumgebung und die Ollama-Verbindung zum DACHS-Cluster benötigt.
 
+---
+
 # Installation des Frontends
 
 Die folgenden Schritte beschreiben die erstmalige Einrichtung des Frontends einschließlich der benötigten Software, Plugins und der anschließenden Projekterstellung.
