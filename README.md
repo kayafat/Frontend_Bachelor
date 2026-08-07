@@ -13,6 +13,8 @@ Das Frontend kann separat geöffnet und kompiliert werden. Für die vollständig
 
 # Installation des Frontends
 
+Die folgenden Schritte beschreiben die erstmalige Einrichtung des Frontends einschließlich der benötigten Software, Plugins und der anschließenden Projekterstellung.
+
 ## Voraussetzungen für das Frontend
 
 Vor der erstmaligen Einrichtung werden folgende Komponenten benötigt:
@@ -27,7 +29,11 @@ Vor der erstmaligen Einrichtung werden folgende Komponenten benötigt:
   - Visual Studio Tools for Unreal Engine
 - NVIDIA-Grafikkarte mit RTX-Unterstützung
 
-Diese Vorraussetzungen werden im 4. Schritt erklärt:
+### Folgende Versionen wurden benutzt:
+
+<img width="537" height="297" alt="powershell_bMCu2TRqRR" src="https://github.com/user-attachments/assets/1d447b2f-9035-4ff5-aaa3-eb5d0929077c" />
+
+### Diese Vorraussetzungen werden im 4. Schritt erklärt:
 - NVIDIA ACE Plugin für Unreal Engine 5.6
 - lokales Audio2Face-Modell-Plugin `NvAudio2FaceClaire`
 
@@ -285,7 +291,6 @@ git lfs pull
 ### `Bachelor.sln` fehlt
 - Visual-Studio-Projektdateien erneut erzeugen:
 - Rechtsklick auf `Bachelor.uproject` → Generate Visual Studio project files
-
 
 ---
 
