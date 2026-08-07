@@ -260,6 +260,40 @@ Unter folgendem [Video-Link](https://www.youtube.com/watch?v=O99oO8TqKOY) ist ei
 
 # Problembehandlung im Frontend
 
+### Fehler `Filename too long` beim Klonen des Repositories
+
+Beim Klonen des Frontend-Repositories kann unter Windows aufgrund langer
+Dateipfade folgende Fehlermeldung auftreten:
+
+```text
+error: unable to create file Content/Teacher/...: Filename too long
+fatal: unable to checkout working tree
+warning: Clone succeeded, but checkout failed.
+```
+
+**In diesem Fall müssen lange Dateipfade für Git aktiviert werden.**
+
+1. PowerShell als Administrator öffnen.
+2. Folgenden Befehl ausführen:
+```
+git config --system core.longpaths true
+```
+3. Die Einstellung kann anschließend mit folgendem Befehl überprüft werden. Als Ausgabe sollte Folgendes erscheinen: `true`
+```
+git config --system --get core.longpaths
+```
+
+4. Den unvollständig geklonten Projektordner löschen und das Repository erneut klonen.
+```
+git clone https://github.com/kayafat/Frontend_Bachelor.git
+```
+
+>[!NOTE]
+>Im übergeordneten Ordner `git lfs install` nicht vergessen!
+>Nach dem Klonen im `Frontend_Bachelor` anschließend `git lfs pull` ausführen.
+
+---
+
 ### `Not in a Git repository`
 - Der Befehl wurde außerhalb des Repository-Ordners ausgeführt.
 ```bat
