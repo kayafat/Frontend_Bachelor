@@ -249,7 +249,7 @@ dargestellt:
 
 ## Installationsguide mit Video
 
-Unter folgendem [Video-Link](https://www.youtube.com/watch?v=O99oO8TqKOY) ist eine grobe Installation des Systems verfügbar.
+Unter folgendem [Video-Link](https://www.youtube.com/watch?v=IC43GnQUxRs) ist eine grobe Installation des Systems verfügbar.
 - Hier wird Backend + Frontend zusammen installiert.
 - Auch eine Ausführung des Systems wird grob gezeigt.
 
