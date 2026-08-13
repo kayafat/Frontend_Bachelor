@@ -257,6 +257,13 @@ Unter folgendem [Video-Link](https://www.youtube.com/watch?v=IC43GnQUxRs) ist ei
 
 ---
 
+## Demonstrations- und Übersichtsvideo
+
+Das folgende Video gibt einen Überblick über die wichtigsten Bestandteile der Unreal-Engine-Umsetzung. Gezeigt werden unter anderem relevante Blueprints, die Gesten- und Animationssteuerung, die Einbindung des MetaHumans sowie ein vollständiges Beispielgespräch mit dem MetaHuman-Dozenten.
+
+🎥 **Video:** [Frontend-Übersicht und Demonstration](https://www.youtube.com/watch?v=V1SRCOCJTiE)
+
+---
 
 # Problembehandlung im Frontend
 
